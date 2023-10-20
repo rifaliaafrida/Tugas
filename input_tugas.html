@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/input.css">
+</head>
+<body>
+    <script>
+        // Load the sidebar.html content using JavaScript
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "sidebar.html", true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const sidebar = document.createElement("div");
+                sidebar.innerHTML = xhr.responseText;
+                document.body.insertBefore(sidebar, document.body.firstChild);
+            }
+        };
+        xhr.send();
+    </script>
+
+    <div class="form">
+        <form action="proses_input.php" method="post">
+            <label for="judul">Judul Tugas:</label>
+            <input type="text" name="judul" id="judul">
+            <br>
+            <label for="deskripsi">Deskripsi Tugas:</label>
+            <textarea name="deskripsi" id="deskripsi"></textarea>
+            <br>
+            <label for="deadline">Deadline:</label>
+            <input type="date" name="deadline" id="deadline">
+            <br>
+            <label for="mata_kuliah">Mata Kuliah:</label>
+            <input type="text" name="mata_kuliah" id="mata_kuliah">
+            <br>
+            <input type="submit" value="Simpan Tugas">
+        </form>
+    </div>
+    
+    
+</body>
+</html>
