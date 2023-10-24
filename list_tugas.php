@@ -35,6 +35,7 @@
   if (mysqli_num_rows($result) > 0) {
       while ($row = mysqli_fetch_assoc($result)) {
           // Tampilkan setiap tugas dalam bentuk kartu
+          echo "<div class='card'>";
           echo "<div class='card1'>";
           echo "<h2>" . $row['judul'] . "</h2>";
           echo "<p>Deskripsi: " . $row['deskripsi'] . "</p>";

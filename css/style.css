@@ -6,7 +6,7 @@ body {
 
 .sidebar {
     height: 100%;
-    width: 200px;
+    width: 400px;
     position: fixed;
     top: 0;
     left: 0;
@@ -27,7 +27,7 @@ body {
     display: block;
     color: #fff;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
 }
 
 .content {
@@ -38,7 +38,6 @@ body {
 /* Efek hover untuk tautan di sidebar */
 .sidebar ul li a:hover {
     background-color: whitesmoke;
-    color: #1C5F37;
 }
 /* Styles for Submenu */
 .sidebar ul li.submenu .submenu-content {
@@ -54,12 +53,4 @@ body {
 .sidebar ul li.submenu .submenu-content li a:hover {
     background-color: whitesmoke;
     color: #1C5F37;    
-}
-/*Content*/
-.image{
-    margin: 10% auto;
-    width: max-content;
-}
-#img1{
-    width: 300px;
 }

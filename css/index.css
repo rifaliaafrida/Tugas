@@ -1,0 +1,43 @@
+.sidebar {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1C5F37;
+    padding-top: 20px;
+}
+.sidebar ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+/* Efek hover untuk tautan di sidebar */
+.sidebar ul li a:hover {
+    background-color: whitesmoke;
+    color: #1C5F37;
+}
+
+/*Content*/
+.image{
+    margin: 10% auto;
+    width: max-content;
+    text-align: center;
+}
+#img1{
+    width: 300px;
+}
+#title{
+    color: #1C5F37;
+    font-size: 35px;
+    font-weight: bold;
+}
+#myweb{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+
+
+}
